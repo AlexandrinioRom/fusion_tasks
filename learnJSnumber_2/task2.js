@@ -1,6 +1,6 @@
 // create elements
-let div = document.createElement('div');
-let input = document.createElement('input');
+const div = document.createElement('div');
+const input = document.createElement('input');
 
 
 document.body.prepend(div);

@@ -1,5 +1,5 @@
-let click = () => alert('уря');
+const click = () => alert('уря');
 
-let button = document.createElement('button');
+const button = document.createElement('button');
 document.body.append(button);
 button.addEventListener('click', click);
