@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    height: 100vh;
+    background-color: burlywood;
+    align-items: center;
+    margin: 0;
+}
+
+table {
+    margin: 0 auto;
+    border: 1px solid;
+}
+
+td,
+th {
+    border: 1px solid;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+th {
+    cursor: pointer;
+}
+
+th:hover {
+    background-color: beige;
+}
