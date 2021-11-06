@@ -1,5 +1,6 @@
 
 ul.onclick = function (event) {
+    if (event.target.tagName != "LI") return;
     const target = event.target;
 
     if (event.metaKey || event.ctrlKey) {
@@ -13,4 +14,4 @@ ul.onclick = function (event) {
         }
     }
 }
-ul.onmousedown = (event) => false;
+ul.onmousedown = () => false;
