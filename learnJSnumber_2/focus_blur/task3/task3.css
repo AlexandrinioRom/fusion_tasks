@@ -1,0 +1,10 @@
+div {
+    border: 1px solid gray;
+    width: 80px;
+}
+
+div {
+    position: fixed;
+    left: 0;
+    top: 0;
+}
