@@ -1,0 +1,14 @@
+#html_container,
+.aria {
+    width: 300px;
+    height: 300px;
+    border: 1px solid gray;
+}
+
+.aria {
+    padding: inherit;
+    resize: none;
+    font-family: inherit;
+    font-size: inherit;
+    outline: none;
+}
