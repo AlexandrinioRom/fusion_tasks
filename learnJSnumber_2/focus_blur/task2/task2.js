@@ -1,7 +1,11 @@
-
+let area = document.querySelector('edit-td');
 document.addEventListener('click', editTd);
 
+
 function editTd () {
+    
+    if (area) return;
+    
     const target = event.target;
     const td = target.closest('td');
     const tr = target.closest('tr');
@@ -23,10 +27,21 @@ function editTd () {
     );
 
     const buttons = document.querySelector('.edit-controls');
-    
-    area.onblur = () => {
-        td.innerHTML = area.value;
+
+    function reset () {
         area.replaceWith(td);
         buttons.remove();
-    };
+        area = null;
+    }
+
+    buttons.onclick = (event) => {
+        const target = event.target;
+        if (target.classList == 'edit-ok') {
+            td.innerHTML = area.value;
+            reset ();
+        }
+        if (target.classList == 'edit-cancel') {
+            reset ();
+        }
+    }
 }
