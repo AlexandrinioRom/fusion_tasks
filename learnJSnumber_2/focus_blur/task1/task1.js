@@ -1,4 +1,6 @@
 const html_container = document.getElementById('html_container');
+let area = null;
+
 html_container.addEventListener('click', editDiv);
 
 function editDiv () {
