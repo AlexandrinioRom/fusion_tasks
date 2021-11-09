@@ -19,7 +19,7 @@ createBlock ();
 createBlock ();
 createBlock ();
 
-function deleteBlock() {
+function deleteBlock(event) {
     if(event.target.tagName == "BUTTON"){
         event.target.parentNode.remove();
     }
