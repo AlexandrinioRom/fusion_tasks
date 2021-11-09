@@ -1,8 +1,8 @@
 slider.addEventListener('mousedown', thumbInit);
 
-function thumbInit () {
+function thumbInit (event) {
     const target = event.target;
-    if (target.classList != 'thumb') return
+    if (!target.classList.contains('thumb')) return
     let shiftX = event.clientX - target.getBoundingClientRect().left;
     
     

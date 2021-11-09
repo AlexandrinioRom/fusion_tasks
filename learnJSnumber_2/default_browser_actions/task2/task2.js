@@ -9,8 +9,9 @@ contents.onclick = function(event) {
     const link = target.closest('a');
     
     if (link) {
-
-        (confirm(`Leave for: ${link.href}?`))? {} : event.preventDefault();
-        
+        const question = confirm(`Leave for: ${link.href}?`);
+        if (!question) {
+            event.preventDefault();
+        }
     } 
 }
